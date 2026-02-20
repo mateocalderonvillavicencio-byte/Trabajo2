@@ -1,0 +1,19 @@
+<h2>Mis Tareas</h2>
+
+<input
+  type="text"
+  [(ngModel)]="nuevaTarea"
+  placeholder="Escribe una tarea"
+/>
+
+<button (click)="agregarTarea()">
+  Agregar
+</button>
+
+<h3>Tareas:</h3>
+
+<ul>
+  <li *ngFor="let tarea of tareas">
+    {{ tarea }}
+  </li>
+</ul>
